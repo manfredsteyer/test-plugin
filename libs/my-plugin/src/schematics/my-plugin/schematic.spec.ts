@@ -10,7 +10,7 @@ describe('my-plugin schematic', () => {
   const options: MyPluginSchematicSchema = { name: 'test' };
 
   const testRunner = new SchematicTestRunner(
-    '@delme/my-plugin',
+    '@delme/my-plugin1',
     join(__dirname, '../../../collection.json')
   );
 
@@ -22,5 +22,11 @@ describe('my-plugin schematic', () => {
     await expect(
       testRunner.runSchematicAsync('my-plugin', options, appTree).toPromise()
     ).resolves.not.toThrowError();
+
+    console.debug('files', appTree.root.subfiles);
+    console.debug('dirs', appTree.root.subdirs);
+
+    expect(appTree.exists('libs/test/tsconfig.lib.json')).toBeTruthy();
+
   });
 });
