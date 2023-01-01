@@ -28,10 +28,10 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "@nrwl/angular": "^9.3.0",
+    "@nrwl/angular": "^15.4.2",
     "@nrwl/eslint-plugin-nx": "9.3.0",
     "@nrwl/jest": "9.3.0",
-    "@nrwl/nx-plugin": "9.3.0",
+    "@nrwl/nx-plugin": "9.8.0",
     "@nrwl/workspace": "9.3.0",
     "@types/jest": "25.1.4",
     "@types/node": "~8.9.4",
